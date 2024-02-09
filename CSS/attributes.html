@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <style>
+        input[type="text"]{
+            background-color: blueviolet;
+            
+        }
+        div{margin: 30px;}
+
+        [class|="top"]{
+            color:white;
+        }
+        [class$="test"]{
+            color: red;
+        }
+        [class~="city"]{
+            border: chartreuse;
+            height: 40px;
+            width: 40px;
+            background-color: darkgrey;
+            color: darkkhaki;
+        }
+           
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname"/>
+    </div>
+       <diV> 
+        <label for="secondname">Secondname:</label>
+        <input type="text" id="secondname" name="pas-2" class="top-5"/>
+    </diV>
+    <div>
+    <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" class="top-2"> 
+    </div>
+    <div >
+    <label for="pswdd">Password:</label>
+        <input type="password" id="pawdd" name="pas-3" class="test" />
+    </div>
+    <div>
+    <label for="phone">Mobile number:</label>
+        <input type="number" id="phone" name="pas-4" pattern="[0-9]" class="first_test"/>
+    </div>
+    <div>
+    <label for="address">Permanent address</label>
+    <textarea rows="5" cols="5" id="address" name="address"></textarea>
+    </div>
+   <div>
+   <label for="address">State</label>
+       <input type="text" id="address" name="address" class="chevella city">
+    </div>
+    <div>
+   <label for="address">City</label>
+       <input type="text" id="address" name="address" class="hyderabad city">
+       </div>
+    <h3>Education</h3>
+<label for="Qualification">Qualification</label>
+
+    <select name="qualification" id="qualification" required  class="city">
+        <option value="Mba">MBA</option>
+        <option value="btech">Btech</option>
+        <option value="b.com">B.com</option>
+        <option value="Mca">MCA</option>
+    </select>
+<label for="year">Year of passing</label>
+    <input type="number" id="year" name="year"/>
+        
+    </form>
+    
+    
+</body>
+</html>

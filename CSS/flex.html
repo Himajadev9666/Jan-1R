@@ -1,122 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <style>
-        .Mb{
-            border: 2px solid black;
-            height: 30px;
-            background-color: black;
-            color: white;
-            display: flex;
-            row-gap: 25px; 
-            column-gap: 43px;
-            row-gap: 20px;
-            
-            
-        }
-        .fb{
-        
-            color: blue;
-        }
-        .fc{
-            visibility: hidden;
-        }
-        
-        .second{
-            display: flex;
-            column-gap: 58px;  
-        }
-        .third{
-            display: flex;
-            column-gap:58px;   
-        }
-        .fourth{
-            display: flex;
-            column-gap: 50px;
-        }
-        .fifth{
-            display: flex;
-            column-gap: 50px;   
-        }
-        .sixth{
-            display: flex;
-            column-gap: 50px;   
-        }
-    </style>
-</head>
-<body> 
-    
-    
-    
-    <div style="border: 2px solid black; width: 450px; height: 350px;">
-    <div style="border: 2px solid black; height:60px; background-color: beige;"><h1>Feb 2024</h1></div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    .bg{
+      border: 2px solid black;
+      width: 450px;
+      height: 550px;
+      flex-wrap: wrap;
+      background-color: aqua;
+      color: black;
+      margin-left: 400px;
+    }
+      .top{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 31px;
+        color: black;
+        text-shadow: 2px 2px white;
+      }
+      .num{
+        display: flex;
+        gap: 30px;
 
-    
-    <div class="Mb">
-       <div class="day">sun</div>
-       <div class="day">mon</div>
-       <div class="day">tue</div>
-       <div class="day">wed</div>
-       <div class="day">thu</div>
-       <div class="day">fri</div>
-       <div class="day">sat</div>
-    </div>
-    <div class="second">
-        <div class="fc">1</div>
-        <div class="fc">1</div>
-        <div class="fc">2</div>
-        <div class="fc">3</div>
-       <div class="fb">1</div>
-       <div class="fb">2</div>
-       <div class="fb">3</div>
-    </div>
-    <div class="third">
-       <div class="fb">4</div>
-       <div class="fb">5</div>
-       <div class="fb">6</div>
-       <div class="fb">7</div>
-       <div class="fb">8</div>
-       <div class="fb">9</div>
-       <div class="fb">10</div>
-    </div>
-    <div class="fourth">
-       <div class="fb">11</div>
-       <div class="fb">12</div>
-       <div class="fb">13</div>
-       <div class="fb">14</div>
-       <div class="fb">15</div>
-       <div class="fb">16</div>
-       <div class="fb">17</div>
-    </div>
-    <div class="fifth">
-       <div class="fb">18</div>
-       <div class="fb">19</div>
-       <div class="fb">20</div>
-       <div class="fb">21</div>
-       <div class="fb">22</div>
-       <div class="fb">23</div>
-       <div class="fb">24</div>
-    </div>
-    <div class="sixth">
-       <div class="fb">25</div>
-       <div class="fb">26</div>
-       <div class="fb">27</div>
-       <div class="fb">28</div>
-       <div class="fb">29</div>
-    </div>
-       
-
-
-
-
-       
+      }
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
       
-       
-    </div>
+      }
+      .date{
+        border: 2px solid black;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: black;
+            color:white;
+            text-align: center;
+            box-shadow: 2px 2px white;
+        
 
+      }
+      .date1{
+        padding: 9px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-left: 10px;
+        box-shadow: 2px 2px white;
+        
+      }
+      .date2{
+        padding: 9px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        box-shadow: 2px 2px white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div>
+        <h1 class="heading" style="text-align: center; text-shadow: 2px 2px white;">Feb 2024</h1>
+        <div style="border: 4px solid black; border-color: black;"></div>
+      <div class="top">
+        <h3>Sun</h3>
+        <h3>Mon</h3>
+        <h3>Tue</h3>
+        <h3>wed</h3>
+        <h3>Thu</h3>
+        <h3>Fri</h3>
+        <h3>Sat</h3>
+        
+      </div>
+      
+      <div class="num">
+        <h3 class="date" style="visibility: hidden;" >1</h3>
+        <h3 class="date" style="visibility: hidden;" >1</h3>
+        <h3 class="date" style="visibility: hidden;">1</h3>
+        <h3 class="date" style="visibility: hidden;">1</h3>
+        <h3 class="date2">1</h3>
+        <h3 class="date2">2</h3>
+        <h3 class="date2">3</h3>
+        </div>
+        <div class="box">
+        <h3 class="date1" style="background-color: white; color: black; box-shadow:2px 2px black;">4</h3>
+        <h3 class="date1">5</h3>
+        <h3 class="date1">6</h3>
+        <h3 class="date1">7</h3>
+        <h3 class="date1">8</h3>
+        <h3 class="date1">9</h3>
+        <h3 class="date1">10</h3>
+        </div>
+        <div class="box">
+        <h3 class="date" style="background-color: white; color: black; box-shadow:2px 2px black;">11</h3>
+        <h3 class="date">12</h3>
+        <h3 class="date">13</h3>
+        <h3 class="date">14</h3>
+        <h3 class="date">15</h3>
+        <h3 class="date">16</h3>
+        <h3 class="date">17</h3>
+        </div>
+        <div class="box">
+        <h3 class="date" style="background-color: white; color: black; box-shadow: 2px 2px black;">18</h3>
+        <h3 class="date">19</h3>
+        <h3 class="date">20</h3>
+        <h3 class="date">21</h3>
+        <h3 class="date">22</h3>
+        <h3 class="date">23</h3>
+        <h3 class="date">24</h3>
+        </div>
+        <div class="box">
+        <h3 class="date" style="background-color:white; color: black; box-shadow: 2px 2px black;">25</h3>
+        <h3 class="date">26</h3>
+        <h3 class="date">27</h3>
+        <h3 class="date">28</h3>
+        <h3 class="date">29</h3>
+        </div>
+
+
+
+      </div>
+    
+      
+    
+    
+  
+
+
+
+  
+  
 </body>
 </html>

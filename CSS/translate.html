@@ -3,59 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Transform</title>
     <style>
     .main{
         background-color: darkgrey;
         border-radius: 1px solid black;
-        height:600px;
+        height:550px;
         width:800px;
         padding: 20px;
+        display: grid;
     }
-    .one:checked~.shapes{
-        transform: translate(100px);
+    .one:active~.shapes{
+        transform: none;
     }
-    .two:checked~.shapes{
+    .two:active~.shapes{
         transform: rotate(20deg);
     }
-    .three:checked~.shapes{
+    .three:active~.shapes{
         transform: rotate(100deg);
     }
-    .four:checked~.shapes{
+    .four:active~.shapes{
         transform: rotate(45deg);
     }
-    .five:checked~.shapes{
+    .five:active~.shapes{
         transform: skew(20deg,20deg);
     }
-    .six:checked~.shapes{
+    .six:active~.shapes{
         transform: skew(40deg,40deg);
     }
-    .seven:checked~.shapes{
+    .seven:active~.shapes{
         transform: skewX(30deg);
     }
-    .eight:checked~.shapes{
+    .eight:active~.shapes{
         transform: skewX(50deg);
     }
-    .nine:checked~.shapes{
+    .nine:active~.shapes{
         transform: skewX(80deg);
     }
-    .ten:checked~.shapes{
+    .ten:active~.shapes{
         transform: matrix(0.866,0.7,-0.8,0.866,0,0);
     }
-    .eleven:checked~.shapes{
+    .eleven:active~.shapes{
         transform: matrix(0.586,0.8,-0.8,0.586,0,0);
     }
-    .twelve:checked~ .shapes{
+    .twelve:active~ .shapes{
         transform: matrix(0.586,0.8,-0.8,0.586,40,30);
     }
     .shapes{
         position: absolute;
-        margin-left: 400px;
-        margin-top: -150px;
+        margin-left: 350px;
+        margin-top: 200px;
     }
-    .box{
+    .input{
         border: 1px solid black;
-        gap: 10px;
     }
 </style>
 </head>
@@ -63,7 +63,7 @@
     <div>
         <div class="main">  
         <div class="one">
-        <input type="radio" name="form" id="click"/>right</div>
+        <input type="radio" name="form" id="click"/>none</div>
         <div class="two">
         <input type="radio" name="form" id="click1" />transform: rotate(20deg):</div>
         <div class="three">

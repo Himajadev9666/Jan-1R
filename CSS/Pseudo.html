@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo classes</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            background-image: linear-gradient(90deg, blue, green, white, red, yellow);
+            margin-left: 200px;
+            
+        }
+        
+       button:hover +div{
+          display: block;
+        }
+        .photo{
+            display: none;
+        }
+        button:hover+ p{
+            display: block;
+            color:white;
+        
+        }
+        p{
+            display:none;
+        }
+        button:active+h1 {
+            display: block;
+        
+        }
+        .video{
+            display: none;
+        }
+        .btn{
+            display: block; 
+        
+        }
+        button:active+h2{
+            display: block;
+        }
+        h2{
+            display: none;
+        }
+        h4:hover{
+            color: greenyellow;
+            
+            
+        }
+        h4:active{
+            color: red;
+        }
+        .btn:active{
+            color: coral;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    
+<div class="main">
+    <button class="btn" style="background-color: coral;" >image</button>
+    <div class="photo"><img src="../assets/eega.jpg" height="100px"/></div>
+    <button class="btn" style="background-color: chartreuse ;">Text</button>
+    <p>Nani Dominates No.1 Pan-India Star On OTT</p>
+    <button class="btn" style="background-color: aqua;">video</button>
+    <h1 class="video"><video height="300px" width="300px" controls>
+        <source src="../assets/animal movie.mp4"/>
+    </video></h1>
+    <button class="btn" style="background-color: darkgreen">Css wikipedia</button>
+    <h2><iframe src="https://en.wikipedia.org/wiki/CSS"></iframe></h2>
+    <h4 class="para">Pseudo-classes in CSS are used to select and style elements based on their state or position within the document tree, without the need for adding extra classes or IDs to the HTML elements.<br> These pseudo-classes are primarily used for creating interactive and dynamic styles in web pages.
+
+    </h4>
+</div>
+</body>
+</html>

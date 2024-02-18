@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Flex</title>
+    <Style>
+        .container{
+            display: flex;
+            margin-right: 80px;
+            
+        }
+        .firstcontainer{
+            border: 1px solid white;
+            height: 320px;
+            width: 450px;
+            background-color: white;
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        .secondcontainer{
+            border: 1px solid white;
+            height: 320px;
+            width: 450px;
+            background-color: white;
+            margin-top: 40px;
+            margin-left: 100px;
+            flex-direction: column;
+        
+            
+        }
+        .thirdcontainer{
+            border: 1px solid white;
+            height: 320px;
+            width: 450px;
+            background-color: white;
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        .one{
+            border-radius: 50%;
+            position: relative;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        .text{
+            text-align: center;
+        }
+        .two{
+            border-radius: 50%;
+            position: relative;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        .team{
+            border: 2px solid black;
+            width: 1100px;
+            height: 650px;
+            background-color: aqua;
+        }
+        .icons{
+            margin-left: 60px;
+            
+            
+        }
+        .bird:hover{
+            color: white;
+            background-color: blue;
+
+        }
+        .face:hover{
+            color: white;
+            background-color: blue;
+        }
+        .phone:hover{
+            color: white;
+            background-color: green;
+        }
+        .post:hover{
+            background-image: linear-gradient(purple,red,yellow);
+            color: white;
+        }
+        
+        
+    </Style>
+</head>
+<body>
+    <div class="team">
+    <h1 style="text-align: center; text-shadow:2px 2px white;">Apple</h1>
+    <p style="text-align: center;"> Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley. It designs, develops, and sells consumer electronics, computer software, and online services.
+        <br> Devices include the iPhone, iPad, Mac, Apple Watch, and Apple TV; operating systems include iOS and macOS; and software applications and services include iTunes, iCloud, and Apple Music.
+
+    </p>
+    
+
+ 
+    <div class="container">
+    <div class="firstcontainer">
+        <img src="../assets/ceo iphone.jpeg" height="100px" width="100px" class="one"/>
+        <h3 class="text"> Tim cook</h3>
+        <p class="text">Cheif exucutive officer</p>
+        <p class="text" style="font-size: small;">Tim Cook is the CEO of Apple and serves on its board of directors.
+        </p>
+        <div class="icons">
+        <i class="fa fa-twitter bird" style="font-size: 24px;"></i>
+        <i class="fa fa-whatsapp phone" style="font-size: 24px;"></i>
+        <i class="fa fa-instagram post" style="font-size:24px;"></i>
+        <i class="fa fa-facebook-f face" style="font-size:25px"></i></div>
+        
+
+    </div>
+    <div class="secondcontainer">
+    <img src="https://cdn.britannica.com/64/121664-004-73C27A0C/Steve-Jobs.jpg" height="100px" width="100px" class="two"/>
+    <h3 class="text"> Steve jobs</h3>
+    <p class="text">Co-Founder</p>
+    <p class="text" style="font-size: small;">Steven Paul Jobs was an American businessman, inventor, and investor best known for co-founding the technology.
+    </p>
+    <div class="icons">
+    <i class="fa fa-twitter bird" style="font-size: 24px;"></i>
+    <i class="fa fa-whatsapp phone" style="font-size: 24px;"></i>
+    <i class="fa fa-instagram post" style="font-size:24px;"></i>
+    <i class="fa fa-facebook-f face" style="font-size:25px"></i></div>
+    
+    </div>
+
+    <div class="thirdcontainer">
+    <img src="../assets/ronald-wayne-profile-apple-businessman-gif2l80lj9dta9vs.webp" height="100px" width="100px" class="two"/>
+    <h3 class="text"> Ronald wayne</h3>
+    <p class="text">Co-Founder</p>
+    <p class="text" style="font-size: small;">Ron Wayne worked at Atari before founding Apple Computer, where he met Steve Jobs, who was involved in new game development.
+    </p>
+    <div class="icons">
+    <i class="fa fa-twitter bird" style="font-size: 24px; gap: 10px;"></i>
+    <i class="fa fa-whatsapp phone" style="font-size: 24px;"></i>
+    <i class="fa fa-instagram post" style="font-size:24px;"></i>
+    <i class="fa fa-facebook-f face" style="font-size:25px"></i></div>
+    
+    </div>
+    </div>
+    </div>
+     
+</body>
+</html>

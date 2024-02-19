@@ -7,88 +7,89 @@
     <style>
     .main{
         background-color: darkgrey;
-        border-radius: 1px solid black;
         height:550px;
         width:800px;
-        padding: 20px;
-        display: grid;
+        display:
+        
     }
-    .one:active~.shapes{
+    .click:checked~.shapes{
         transform: none;
     }
-    .two:active~.shapes{
+    .click1:checked~.shapes{
         transform: rotate(20deg);
     }
-    .three:active~.shapes{
+    .click2:checked~.shapes{
         transform: rotate(100deg);
     }
-    .four:active~.shapes{
+    .click3:checked~.shapes{
         transform: rotate(45deg);
     }
-    .five:active~.shapes{
+    .click4:checked~.shapes{
         transform: skew(20deg,20deg);
     }
-    .six:active~.shapes{
+    .click5:checked~.shapes{
         transform: skew(40deg,40deg);
     }
-    .seven:active~.shapes{
+    .click6:checked~.shapes{
         transform: skewX(30deg);
     }
-    .eight:active~.shapes{
+    .click7:checked~.shapes{
         transform: skewX(50deg);
     }
-    .nine:active~.shapes{
+    .click8:checked~.shapes{
         transform: skewX(80deg);
     }
-    .ten:active~.shapes{
+    .click9:checked~.shapes{
         transform: matrix(0.866,0.7,-0.8,0.866,0,0);
     }
-    .eleven:active~.shapes{
+    .click10:checked~.shapes{
         transform: matrix(0.586,0.8,-0.8,0.586,0,0);
     }
-    .twelve:active~ .shapes{
+    .click11:checked~.shapes{
         transform: matrix(0.586,0.8,-0.8,0.586,40,30);
     }
     .shapes{
         position: absolute;
-        margin-left: 350px;
-        margin-top: 200px;
+        margin-left: 450px;
+        margin-top: -300px;
     }
-    .input{
-        border: 1px solid black;
+    input{
+        margin-top: 10px;
+        
     }
 </style>
 </head>
 <body>
-    <div>
-        <div class="main">  
-        <div class="one">
-        <input type="radio" name="form" id="click"/>none</div>
-        <div class="two">
-        <input type="radio" name="form" id="click1" />transform: rotate(20deg):</div>
-        <div class="three">
-        <input type="radio" name="form" id="click2"/>transform: rotate(40deg);</div>
-        <div class="four">
-        <input type="radio" name="form" id="click3"/>transform: rotate(100deg);</div>
-        <div class="five">
-        <input type="radio" name="form" id="click4"/>transform: skew(20deg,20deg);</div>
-        <div class="six">
-        <input type="radio" name="form" id="click5"/>transform: skew(40deg,40deg);</div>
-        <div class="seven">
-        <input type="radio" name="form" id="click6"/>transform: skewX(30deg);</div>
-        <div class="eight">
-        <input type="radio" name="form" id="click7"/> transform: skewX(50deg);</div>
-        <div class="nine">
-        <input type="radio" name="form" id="click8"/>transform: skewX(80deg);</div>
-        <div class="ten">
-        <input type="radio" name="form" id="click9"/>transform: matrix20(0.866,0.7,-0.8,0.866,0,0);</div>
-        <div class="eleven">
-        <input type="radio" name="form" id="click10"/>transform: matrix40(0.586,0.8,-0.8,0.586,0,0);</div>
-        <div class="twelve">
-        <input type="radio" name="form" id="click11"/>transform: matrix80(0.586,0.8,-0.8,0.586,40,30);</div>
-        <img src="../assets/buddhist-meditates-tranquil-pond-surrounded-by-lotus-generative-ai_188544-12718.avif" height="100px" width="200px" class="shapes" />
-        </div>
-    </div>
     
+     
+        <div class="main">
+        <input type="radio" name="form" class="click"/>none<br><br>
+
+        <input type="radio" name="form" class="click1" />transform: rotate(20deg)<br><br>
+        
+        <input type="radio" name="form" class="click2"/>transform: rotate(40deg)<br><br>
+        
+        <input type="radio" name="form" class="click3"/>transform: rotate(100deg)<br><br>
+
+        <input type="radio" name="form" class="click4"/>transform: skew(20deg,20deg)<br><br>
+    
+        <input type="radio" name="form" class="click5"/>transform: skew(40deg,40deg)<br><br>
+
+        <input type="radio" name="form" class="click6"/>transform: skewX(30deg)<br><br>
+        
+        <input type="radio" name="form" class="click7"/> transform: skewX(50deg)<br><br>
+    
+        <input type="radio" name="form" class="click8"/>transform: skewX(80deg)<br><br>
+        
+        <input type="radio" name="form" class="click9"/>transform: matrix20(0.866,0.7,-0.8,0.866,0,0)<br><br>
+    
+        <input type="radio" name="form" class="click10"/>transform: matrix40(0.586,0.8,-0.8,0.586,0,0)<br><br>
+    
+        <input type="radio" name="form" class="click11"/>transform: matrix80(0.586,0.8,-0.8,0.586,40,30)<br><br>
+    
+        <img src="../assets/buddhist-meditates-tranquil-pond-surrounded-by-lotus-generative-ai_188544-12718.avif" height="100px" width="200px" class="shapes" />
+        
+
+    </div>
 </body>
 </html>

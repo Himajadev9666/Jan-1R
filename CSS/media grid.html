@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layouts</title>
+    <style>
+        .grid{
+            border: 2px solid black;
+            height: 300px;
+            width: 250px;
+            display: grid;
+            background-color: chartreuse;
+    
+            
+        }
+        .box{
+            border: 1px solid black;
+            background-color: aquamarine;
+            text-align: center;
+            
+        }
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .two{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        @media screen and (min-width:0px) and (max-width:300px) {
+            .main2,.main3{ 
+                 display:none;
+            }  
+        }
+
+        @media screen and (min-width:301px) and (max-width:600px) {
+            .main,.main3{
+                        display: none;
+            }  
+        }
+        @media screen and (min-width:601px) and (max-width:1400px) {
+            .main,.main2{
+                display:none;
+            }   
+        }
+        
+        .grid1{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            display: grid;
+            padding: 20px;
+            grid-template-columns: repeat(3,100px);
+            gap: 10px;
+            background-color: aqua;
+            margin: 10px;
+        
+            
+        }
+        .cd1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .media{
+            border: 1px solid black;
+            background-color: lightgreen;
+            text-align: center;
+        }
+        .cd4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .hp1  { grid-area:header;}
+        .hp2  { grid-area: menu; }
+        .hp3  { grid-area: main; }
+        .hp4  { grid-area: right; }
+        .hp5  { grid-area: footer; }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(5,100px);
+            grid-template-areas:
+                  'header header header header header '
+                  'menu main main main right '
+                  'menu footer footer footer footer ';
+             gap: 10px;
+             height: 300px;
+             width: 250px;
+             margin: 10px;
+}
+        
+        .dell{
+            border: 1px solid black;
+            background-color:lightskyblue;
+            text-align: center;
+        }
+        .cd8{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="grid">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box one">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box two">4</div>
+    </div>
+    </div>
+    <div class="main2">
+    <div class="grid1">
+    <div class="media cd1">one</div>
+    <div class="media cd2">two</div>
+    <div class="media cd3">three</div>
+    <div class="media cd4">four</div>
+    <div class="media cd5">five</div>
+    <div class="media cd6">six</div>
+    <div class="media cd7">seven</div>
+    <div class="media cd8">eight</div>
+    </div>
+    </div>
+    <div class="main3">
+    <div class="grid2">
+        <div class="dell hp1">HEADER</div>
+        <div class="dell hp2">MENU</div>
+        <div class="dell hp3">MAIN</div>
+        <div class="dell hp4">RIGHT</div>
+        <div class="dell hp5">FOOTER</div>
+    </div>
+    </div>
+
+
+
+</body>
+</html>

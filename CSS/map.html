@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fa78c7b5e9.js" crossorigin="anonymous"></script>
     <title>Map</title>
     <style>
         .button{
@@ -12,29 +13,31 @@
             color: white;
         }
         #P1{
-            height: 20px;
-            width: 20;
+            height: 40px;
+            width: 40px;
         }
         .M1{
             display: inline-block;
-            margin-left: 60px;
-            
+            margin-left: 60px;  
         }
-        
-        
-            
-            
+        .map{
+            display: flex;
+            gap: 80px;
+        }      
     </style>
-
 </head>
 <body>
-    <div>
-        <div class="P1" >&#9776;    
+    <div class="map">
+        <div class="P1" >&#9776; </div> 
+        <div>Where are you</div>
+        <i class="fa-solid fa-phone" style="color: #0e0f11;"></i>
+
+        <div></div>     
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.77490448696!2d77.30125374670206!3d12.954459543640922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1706340244016!5m2!1sen!2sin"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.77490448696!2d77.30125374670206!3d12.954459543640922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1706340244016!5m2!1sen!2sin" ></iframe>
     <div>
         <div class="M1" style="font-size: 30px;" >&#127976; &#127970; &#127968;&#127974;	
-        <pre style="font-size: 10px;"> Hotel   Office     Home    Bank </pre>
+        <pre style="font-size: 10px;"> Hotel   Office   Home   Bank     </pre>
     </div>
 
     <form style="margin: 20px;">
